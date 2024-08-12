@@ -1,0 +1,15 @@
+{
+  "name": "@dogwoodlogic/lefthook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "install": "lefthook install",
+    "test:lint": "lefthook run commit-msg"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lefthook": "^1.7.11"
+  }
+}
