@@ -1,0 +1,6 @@
+# git hooks config for this repository
+commit-msg:
+  follow: true
+
+extends:
+  - hooks/commit-msg/lint.yml
