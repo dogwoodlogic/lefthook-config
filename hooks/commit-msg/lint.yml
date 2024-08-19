@@ -1,0 +1,4 @@
+commit-msg:
+  commands:
+    lint:
+      run: npx @dogwoodlogic/commit-msg-config -p {1}

@@ -1,15 +1,27 @@
 {
-  "name": "@dogwoodlogic/lefthook",
+  "name": "@dogwoodlogic/lefthook-config",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
     "install": "lefthook install",
-    "test:lint": "lefthook run commit-msg"
+    "test:lint": "lefthook run commit-msg",
+    "lint": "npx eslint 'packages/**.js'",
+    "lint:fix": "npx eslint 'packages/**.js'--fix",
+    "lint:package": "npx fixpack"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lefthook": "^1.7.11",
+    "@dogwoodlogic/commit-msg-config": "file:./packages/commit-msg-config",
+    "eslint": "^8.56.0",
+    "eslint-config-digitalbazaar": "^5.0.1",
+    "eslint-plugin-jsdoc": "^48.1.0",
+    "eslint-plugin-unicorn": "^51.0.1"
+  },
+  "peerDependencies": {
     "lefthook": "^1.7.11"
   }
 }
