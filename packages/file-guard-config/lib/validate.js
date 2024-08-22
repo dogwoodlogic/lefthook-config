@@ -37,9 +37,13 @@ export async function validate({paths}) {
 export function getConfig() {
   // pick any config values out of the environment
   const env = clean(pick(process.env, Object.keys(config)));
+  // TODO: Use zod to clean and cast these as needed
   // dotenv parses all values as strings so cast booleans as needed
   if(has(env, 'FG_BLOCK_GLOBBED')) {
     env.FG_BLOCK_GLOBBED = boolean(env.FG_BLOCK_GLOBBED);
+  }
+  if(has(env, 'FG_MAX_SIZE_IGNORE_GLOB')) {
+    env.FG_MAX_SIZE_IGNORE_GLOB = boolean(env.FG_MAX_SIZE_IGNORE_GLOB);
   }
   // merge the picked values over the default configs and return
   return merge(config, env);
