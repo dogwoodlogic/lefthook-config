@@ -2,5 +2,9 @@
 commit-msg:
   follow: true
 
+pre-commit:
+  follow: true
+
 extends:
   - hooks/commit-msg/lint.yml
+  - hooks/pre-commit/validate-file-size.yml

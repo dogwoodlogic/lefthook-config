@@ -1,0 +1,24 @@
+{
+  "name": "@dogwoodlogic/file-size-config",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "lib/index.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "yargs": "^17.7.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-digitalbazaar": "^5.0.1",
+    "eslint-plugin-jsdoc": "^48.1.0",
+    "eslint-plugin-unicorn": "^51.0.1"
+  },
+  "scripts": {
+    "lint": "npx eslint 'packages/**.js'",
+    "lint:fix": "npx eslint 'packages/**.js'--fix"
+  }
+}
