@@ -61,6 +61,49 @@ FG_MAX_SIZE="25kb"
 ```sh
 FG_MAX_SIZE="5mb"
 FG_EXT_GLOB="*.csv"
-FG_BLOCK_GLOBBED=TRUE
-
+FG_BLOCK_GLOBBED="YES"
 ```
+
+Documentation for any additional configuration options for each hook
+can be found in that hooks source directory under `/packages`.
+
+### Available Configs
+
+Configs contain bundled hooks for targeted use cases and
+are available in the `/configs` directory.
+
+```yml
+extends:
+  - node_modules/@dogwoodlogic/lefthook-config/configs/*
+```
+
+#### Base Config
+
+Minimal base config
+
+Incudes
+
+- `@dogwoodlogic/commit-msg-config`
+
+```yml
+extends:
+  - node_modules/@dogwoodlogic/lefthook-config/configs/base.yml
+```
+
+#### JS Config
+
+Javascript oriented config
+
+Incudes
+
+- Base config
+
+```yml
+extends:
+  - node_modules/@dogwoodlogic/lefthook-config/configs/base.yml
+```
+
+### Available Hooks
+
+- `@dogwoodlogic/commit-msg-config`
+- `@dogwoodlogic/file-guard-config`
