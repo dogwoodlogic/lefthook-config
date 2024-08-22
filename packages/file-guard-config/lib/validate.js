@@ -1,15 +1,17 @@
-import {merge, pick} from 'lodash-es';
+import {has, merge, pick} from 'lodash-es';
+import {boolean} from 'boolean';
 import clean from 'omit-empty';
 import {config} from './configs.js';
 import match from 'micromatch';
 import {parse} from 'bytes';
 import {resolve} from 'node:path';
 import {stat} from 'node:fs/promises';
+
 export async function validate({paths}) {
   const {
     FG_MAX_SIZE: max,
     FG_MAX_SIZE_IGNORE_GLOB: ignoreGlob,
-    FG_BLOCK_ALL: block,
+    FG_BLOCK_GLOBBED: block,
     FG_EXT_GLOB: glob
   } = getConfig();
 
@@ -35,6 +37,10 @@ export async function validate({paths}) {
 export function getConfig() {
   // pick any config values out of the environment
   const env = clean(pick(process.env, Object.keys(config)));
+  // dotenv parses all values as strings so cast booleans as needed
+  if(has(env, 'FG_BLOCK_GLOBBED')) {
+    env.FG_BLOCK_GLOBBED = boolean(env.FG_BLOCK_GLOBBED);
+  }
   // merge the picked values over the default configs and return
   return merge(config, env);
 }
