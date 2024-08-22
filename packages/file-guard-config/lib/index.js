@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import {hideBin} from 'yargs/helpers';
+import {validate} from './validate.js';
 import yargs from 'yargs';
 
 yargs(hideBin(process.argv))
@@ -13,11 +14,15 @@ yargs(hideBin(process.argv))
       });
     },
     async ({staged}) => {
-      console.log(staged);
+      return validate({paths: staged});
     }
   )
   .fail((msg, err) => {
-    console.error(msg, err);
+    if(msg) {
+      console.error(msg);
+    } else {
+      console.error(err.message);
+    }
     process.exit(1);
   })
   .parseAsync();

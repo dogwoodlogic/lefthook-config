@@ -7,4 +7,4 @@ pre-commit:
 
 extends:
   - hooks/commit-msg/lint.yml
-  - hooks/pre-commit/validate-file-size.yml
+  - hooks/pre-commit/file-guard.yml

@@ -14,12 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lefthook": "^1.7.11",
     "@dogwoodlogic/commit-msg-config": "file:./packages/commit-msg-config",
+    "@dogwoodlogic/file-guard-config": "file:./packages/file-guard-config",
     "eslint": "^8.56.0",
     "eslint-config-digitalbazaar": "^5.0.1",
     "eslint-plugin-jsdoc": "^48.1.0",
-    "eslint-plugin-unicorn": "^51.0.1"
+    "eslint-plugin-unicorn": "^51.0.1",
+    "lefthook": "^1.7.11"
   },
   "peerDependencies": {
     "lefthook": "^1.7.11"
