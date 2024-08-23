@@ -15,8 +15,8 @@ for(const _package of packages) {
   try {
     await symlink(
       // eslint-disable-next-line max-len
-      resolve(cwd, 'node_modules/@dogwoodlogic/lefthook-config/packages', _package),
-      resolve(cwd, 'node_modules/@dogwoodlogic/', _package),
+      resolve(cwd, 'node_modules/@dogwoodlogic/lefthook-config/packages', _package, 'lib/index.js'),
+      resolve(cwd, 'node_modules/.bin/', _package),
     );
   } catch(error) {
     console.log('Symlink exists already');

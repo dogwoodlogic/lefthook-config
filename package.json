@@ -1,7 +1,7 @@
 {
   "name": "@dogwoodlogic/lefthook-config",
   "description": "",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "",
   "dependencies": {
     "@dotenvx/dotenvx": "^1.9.1"
