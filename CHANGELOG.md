@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 - 2024-08-23
+
+### Fixed
+
+- Update postinstall script.
+
 ## 1.0.2 - 2024-08-23
 
 ### Fixed

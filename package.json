@@ -1,7 +1,7 @@
 {
   "name": "@dogwoodlogic/lefthook-config",
   "description": "",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "",
   "dependencies": {
     "@dotenvx/dotenvx": "^1.9.1"
@@ -25,7 +25,7 @@
     "lint:fix": "npx eslint 'packages/**.js'--fix",
     "lint:package": "npx fixpack",
     "test:lint": "lefthook run commit-msg",
-    "postinstall": "! [ $npm_config_save_dev ] && echo \"Please install @dogwoodlogic/lefthook-config as a dev dep!\" || if [ ! -e .no-postinstall ]; then npm i lefthook && lefthook install && node ./postinstall.js; fi"
+    "postinstall": "if [ ! -e .no-postinstall ]; then npm i lefthook && lefthook install && node ./postinstall.js; fi"
   },
   "type": "module",
   "workspaces": [
