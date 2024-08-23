@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 - 2024-08-23
+
+### Removed
+
+- Removed monolith architecture and modularize individual hook scripts.
+
 ## 1.0.6 - 2024-08-23
 
 ### Fixed
