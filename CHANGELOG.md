@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.0.0 - 2023-08-22
+## 1.0.1 - 2024-08-23
+
+### Fixed
+
+- Fixed an issue regarding local module resolution by npm.
+
+## 1.0.0 - 2024-08-22
 
 ### Added
 

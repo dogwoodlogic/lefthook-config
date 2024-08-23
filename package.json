@@ -1,11 +1,12 @@
 {
   "name": "@dogwoodlogic/lefthook-config",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.9.1"
+  },
   "devDependencies": {
-    "@dogwoodlogic/commit-msg-config": "file:./packages/commit-msg-config",
-    "@dogwoodlogic/file-guard-config": "file:./packages/file-guard-config",
     "eslint": "^8.56.0",
     "eslint-config-digitalbazaar": "^5.0.1",
     "eslint-plugin-jsdoc": "^48.1.0",
@@ -25,5 +26,8 @@
     "lint:package": "npx fixpack",
     "test:lint": "lefthook run commit-msg"
   },
-  "type": "module"
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ]
 }
