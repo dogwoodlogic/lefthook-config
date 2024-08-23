@@ -20,11 +20,12 @@
   },
   "repository": "https://github.com/dogwoodlogic/lefthook-config",
   "scripts": {
-    "install": "lefthook install",
+    "sync": "lefthook install",
     "lint": "npx eslint 'packages/**.js'",
     "lint:fix": "npx eslint 'packages/**.js'--fix",
     "lint:package": "npx fixpack",
-    "test:lint": "lefthook run commit-msg"
+    "test:lint": "lefthook run commit-msg",
+    "postinstall": "! [ $npm_config_save_dev ] && echo \"Please install @dogwoodlogic/lefthook-config as a dev dep!\" || if [ ! -e .no-postinstall ]; then npm i lefthook && lefthook install && node ./postinstall.js; fi"
   },
   "type": "module",
   "workspaces": [
