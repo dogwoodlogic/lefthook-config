@@ -14,7 +14,6 @@ yargs(hideBin(process.argv))
       });
     },
     async ({path}) => {
-      console.log(path);
       const content = await read({path});
       let {msg} = content;
       const {rest} = content;
