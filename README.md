@@ -1,14 +1,9 @@
 # lefthook-config
 
-[![Latest version of '@dlinc/lefthook-config' @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/dogwoodlogic/dlinc/npm/@dlinc/lefthook-config/latest/x/?render=true&show_latest=true&badge_token=gAAAAABmzMRL_V-cdQ5r-AX1bpOuKadYkwCnndAvW5EALV_ww7Lx-nYToI3RIo42oHaSwqrNHByFERs_ahbZvP_03UgQ7Y5Vpng0ZphXPyCVUQjh8ge-xhw%3D)](https://cloudsmith.io/~dogwoodlogic/repos/dlinc/packages/detail/npm/@dlinc%252Flefthook-config/latest/)
-
 A set of predefined git hooks that can be pulled into
 dLinc repositories to enforce source control guidelines and policies.
 
 ## Installation
-
-The package can be installed from the `@dogwoodlogic` private
-registry.
 
 ```sh
 npm i -D @dlinc/lefthook-config

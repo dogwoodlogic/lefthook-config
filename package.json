@@ -1,8 +1,8 @@
 {
   "name": "@dlinc/lefthook-config",
   "description": "",
-  "version": "1.2.2-0",
-  "author": "",
+  "version": "1.2.2",
+  "author": "Dogwood Logic, Inc.",
   "dependencies": {
     "@dlinc/commit-msg-config": "^1.0.0",
     "@dlinc/file-guard-config": "^1.0.0",
@@ -15,7 +15,7 @@
     "eslint-plugin-unicorn": "^51.0.1",
     "lefthook": "^1.7.11"
   },
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "main": "./lib/index.js",
   "peerDependencies": {
     "lefthook": "^1.7.11"
