@@ -1,5 +1,7 @@
 # lefthook-config
 
+![NPM Version](https://img.shields.io/npm/v/%40dlinc%2Flefthook-config)
+
 A set of predefined git hooks that can be pulled into
 dLinc repositories to enforce source control guidelines and policies.
 
