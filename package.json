@@ -1,11 +1,11 @@
 {
-  "name": "@dogwoodlogic/lefthook-config",
+  "name": "@dlinc/lefthook-config",
   "description": "",
-  "version": "1.1.1-0",
+  "version": "1.2.0",
   "author": "",
   "dependencies": {
-    "@dogwoodlogic/commit-msg-config": "^1.0.0",
-    "@dogwoodlogic/file-guard-config": "^1.0.0",
+    "@dlinc/commit-msg-config": "^1.0.0",
+    "@dlinc/file-guard-config": "^1.0.0",
     "@dotenvx/dotenvx": "^1.9.1"
   },
   "devDependencies": {

@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 -2024-08-26
+
+### Removed
+
+- Cleaned up unused files
+
+### Changed
+
+- Published to cloudsmith under a new namespace.
+
 ## 1.1.0 - 2024-08-23
 
 ### Removed

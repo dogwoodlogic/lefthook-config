@@ -9,7 +9,7 @@ The package can be installed from the `@dogwoodlogic` private
 registry.
 
 ```sh
-npm i -D @dogwoodlogic/lefthook-config
+npm i -D @dlinc/lefthook-config
 ```
 
 ## Configuration and Usage
@@ -31,9 +31,9 @@ heading.
 ```yml
 extends:
   # extend from the base config
-  - node_modules/@dogwoodlogic/lefthook-config/configs/base.yml
+  - node_modules/@dlinc/lefthook-config/configs/base.yml
   # pull in an individual hook
-  - node_modules/@dogwoodlogic/lefthook-config/hooks/pre-commit/file-guard.yml
+  - node_modules/@dlinc/lefthook-config/hooks/pre-commit/file-guard.yml
 ```
 
 Lefthook overlays the extended configs on top of one another, allowing for
@@ -74,7 +74,7 @@ are available in the `/configs` directory.
 
 ```yml
 extends:
-  - node_modules/@dogwoodlogic/lefthook-config/configs/*
+  - node_modules/@dlinc/lefthook-config/configs/*
 ```
 
 #### Base Config
@@ -87,7 +87,7 @@ Incudes
 
 ```yml
 extends:
-  - node_modules/@dogwoodlogic/lefthook-config/configs/base.yml
+  - node_modules/@dlinc/lefthook-config/configs/base.yml
 ```
 
 #### JS Config
@@ -100,10 +100,10 @@ Incudes
 
 ```yml
 extends:
-  - node_modules/@dogwoodlogic/lefthook-config/configs/base.yml
+  - node_modules/@dlinc/lefthook-config/configs/base.yml
 ```
 
 ### Available Hooks
 
-- `@dogwoodlogic/commit-msg-config`
-- `@dogwoodlogic/file-guard-config`
+- `@dlinc/commit-msg-config`
+- `@dlinc/file-guard-config`
