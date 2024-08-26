@@ -1,7 +1,7 @@
 {
   "name": "@dlinc/lefthook-config",
   "description": "",
-  "version": "1.2.1",
+  "version": "1.2.2-0",
   "author": "",
   "dependencies": {
     "@dlinc/commit-msg-config": "^1.0.0",
