@@ -1,3 +1,3 @@
 # lefthook default to enforce proper commit message format
 extends:
-  - node_modules/@dogwoodlogic/lefthook-config/hooks/commit-msg/lint.yml
+  - node_modules/@dlinc/lefthook-config/hooks/commit-msg/lint.yml

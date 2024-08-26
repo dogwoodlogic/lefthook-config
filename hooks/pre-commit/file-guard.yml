@@ -1,4 +1,4 @@
 pre-commit:
   commands:
     file-guard:
-      run: npx @dotenvx/dotenvx run -f .env.lefthook -- npx -y @dogwoodlogic/file-guard-config -s {staged_files}
+      run: npx -y @dotenvx/dotenvx run -f .env.lefthook -- npx -y @dlinc/file-guard-config -s {staged_files}
