@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.2.0 -2024-08-26
+## 1.2.1 - 2024-08-26
+
+### Fixed
+
+- Ensure that postinstall script syncs hooks.
+
+## 1.2.0 - 2024-08-26
 
 ### Removed
 
