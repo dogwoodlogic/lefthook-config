@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.3 - 2024-09-13
+
+### Fixed
+
+- Removed postinstall script.
+
 ## 1.2.2 - 2024-08-26
 
 ### Changed
