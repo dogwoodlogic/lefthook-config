@@ -22,7 +22,6 @@
   },
   "repository": "https://github.com/dogwoodlogic/lefthook-config",
   "scripts": {
-    "postinstall": "lefthook install",
     "lint": "npx eslint 'packages/**.js'",
     "lint:fix": "npx eslint 'packages/**.js'--fix",
     "lint:package": "npx fixpack"
