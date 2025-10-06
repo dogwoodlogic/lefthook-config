@@ -9,3 +9,4 @@ extends:
   - hooks/commit-msg/lint.yml
   - hooks/pre-commit/file-guard.yml
   - hooks/pre-commit/gitleaks.yaml
+  - hooks/pre-commit/semgrep.yaml
