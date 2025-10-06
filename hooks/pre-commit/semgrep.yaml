@@ -1,0 +1,7 @@
+pre-commit:
+  commands:
+    gitleaks:
+      run: |
+        docker run --rm -v "${PWD}:/src" semgrep/semgrep semgrep scan \
+          --config "p/ci" --quiet
+
