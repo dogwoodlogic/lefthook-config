@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    gitleaks:
+      run: |
+        docker run --rm -v "$(pwd):/repo" ghcr.io/gitleaks/gitleaks:latest \
+          git --pre-commit --redact=60 --no-banner --staged \
+          -c /repo/node_modules/@dlinc/lefthook-config/.gitleaks.toml \
+          -v /repo 
+
+
