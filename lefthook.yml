@@ -8,5 +8,5 @@ pre-commit:
 extends:
   - hooks/commit-msg/lint.yml
   - hooks/pre-commit/file-guard.yml
-  - hooks/pre-commit/gitleaks.yaml
-  - hooks/pre-commit/semgrep.yaml
+  - hooks/pre-commit/gitleaks.yml
+  - hooks/pre-commit/semgrep.yml

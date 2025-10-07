@@ -1,3 +1,5 @@
 # lefthook default to enforce proper commit message format
 extends:
   - node_modules/@dlinc/lefthook-config/hooks/commit-msg/lint.yml
+  - node_modules/@dlinc/lefthook-config/hooks/pre-commit/gitleaks.yml
+  - node_modules/@dlinc/lefthook-config/hooks/pre-commit/semgrep.yml
