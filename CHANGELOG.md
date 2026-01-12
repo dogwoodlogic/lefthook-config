@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 - 2026-01-xx
+
+### Added
+- Support for Python `black` formatting & `flake8` linting (PEP 8 Compliance).
+
 ## 1.2.3 - 2024-09-13
 
 ### Fixed
