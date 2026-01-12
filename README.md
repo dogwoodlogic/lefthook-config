@@ -102,6 +102,23 @@ extends:
   - node_modules/@dlinc/lefthook-config/configs/base.yml
 ```
 
+#### Python Config
+
+Python oriented config
+
+Incudes
+
+- Base config
+- `black` formatter
+- `flake8` linter
+
+```yml
+extends:
+  - node_modules/@dlinc/lefthook-config/configs/base.yml
+  - node_modules/@dlinc/lefthook-config/configs/python.yml
+
+```
+
 ### Available Hooks
 
 - `@dlinc/commit-msg-config`
