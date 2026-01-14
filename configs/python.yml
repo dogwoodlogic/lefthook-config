@@ -1,7 +1,3 @@
-pre-commit:
-  commands:
-    black:
-      run: "black . --exclude '/(\\.venv|venv|env|\\.env|__pycache__)/'"
-      stage_fixed: true
-    flake8:
-      run: "flake8 . --max-line-length 88 --extend-ignore E203,W503 --exclude .venv,venv,env,.env,__pycache__"
+extends:
+  - node_modules/@dlinc/lefthook-config/hooks/pre-commit/black.yml
+  - node_modules/@dlinc/lefthook-config/hooks/pre-commit/flake8.yml

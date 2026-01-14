@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    flake8:
+      run: >
+        docker run --rm -v "${PWD}:/apps" alpine/flake8:latest \
+        --max-line-length 88 \
+        --extend-ignore E203,W503 \
+        --exclude .venv,venv,env,.env,__pycache__
