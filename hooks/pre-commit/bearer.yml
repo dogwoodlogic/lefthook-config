@@ -1,6 +1,6 @@
 pre-commit:
   commands:
-    gitleaks:
+    bearer:
       run: |
         docker run --rm -v "${PWD}:/repo" bearer/bearer scan /repo \
           --severity critical,high --quiet
