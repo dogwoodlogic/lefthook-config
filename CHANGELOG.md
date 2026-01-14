@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 - 2026-01-xx
+
+### Added
+- Add `semgrep` hook.
+- Add `stage_fixed` flag to stage changes after Python formatter is executed.
+
 ## 1.3.0 - 2026-01-12
 
 ### Added
