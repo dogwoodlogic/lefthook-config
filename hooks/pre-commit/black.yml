@@ -1,7 +1,7 @@
 pre-commit:
   commands:
     black:
-      run: >
+      run: |
         docker run --rm -v "${PWD}:/src" --workdir /src pyfound/black:latest_release \
         black .
       stage_fixed: true
