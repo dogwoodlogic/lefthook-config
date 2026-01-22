@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.1 - 2026-01-22
+
+### Fixed
+- Fixed `black` and `flake8` docker commands in hooks.
+
 ## 1.4.0 - 2026-01-15
 
 ### Added
